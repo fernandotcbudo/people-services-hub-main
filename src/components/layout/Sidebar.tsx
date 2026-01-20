@@ -139,7 +139,7 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed md:sticky top-[57px] md:top-[57px] left-0 h-[calc(100vh-57px)] w-72 bg-sidebar border-r border-sidebar-border z-50 transition-transform duration-300 overflow-y-auto",
+          "fixed md:sticky top-[57px] md:top-[57px] left-0 h-[calc(100vh-57px)] w-72 bg-sidebar border-r border-sidebar-border z-40 transition-transform duration-300 overflow-y-auto",
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         )}
       >

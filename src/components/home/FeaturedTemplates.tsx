@@ -21,167 +21,215 @@ interface Template {
 }
 
 const sampleTemplate: Template = {
-  title: "Standard Answer",
+  title: "Contingent Worker Hire",
   tags: [
     { label: "EC-SF", variant: "info" },
     { label: "New Hire", variant: "success" },
   ],
   content: {
     es: {
-      short: `Buenos días/Buenas tardes [Nombre del Colaborador],
+      short: `Buenos días/Buenas tardes [Nombre del Manager/HRBP],
 
-Gracias por contactarte con People Services. Hemos recibido tu solicitud y la estamos procesando.
+Gracias por contactarte con People Services.
 
-📋 Información:
-- Tipo: [Descripción de la solicitud]
-- Número de caso: [Número de Ticket]
-- Tiempo estimado: [X] días hábiles
+✅ Contingent Worker Creado Exitosamente:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Te notificaremos cuando completemos el proceso.
+Confirmamos que el perfil del contingent worker ha sido creado 
+satisfactoriamente en EC-SF:
 
-Saludos cordiales,
-[Nombre del Especialista]
-People Services`,
-      long: `Buenos días/Buenas tardes [Nombre del Colaborador],
+📋 Información del Contingent Worker:
+- Información general: [Nombre completo del trabajador, posición, manager]
+- Estado: ✅ Creado - Pendiente aprobación de workflow
 
-Gracias por contactarte con People Services. Hemos recibido tu solicitud y entendemos la importancia de resolver esto para ti de manera oportuna.
+🔄 Próximo paso importante:
 
-📋 Información importante:
-- Tipo: [Descripción de la solicitud] en EC-SF
-- Número de caso: [Número de Ticket]
-- Asignado a: [Nombre del Especialista]
-- Estado actual: En proceso
-- Tiempo estimado: [X] días hábiles (hasta el [fecha estimada])
+El manager [Nombre del manager] recibirá un workflow de aprobación
+en EC-SF en las próximas 2-4 horas.
 
-📌 Próximos pasos:
-1. Validaremos la información en nuestros sistemas (1-2 días hábiles)
-2. Si necesitamos información adicional, te contactaremos vía [correo/teléfono]
-3. Te notificaremos tan pronto completemos el proceso
-
-⏰ ¿Qué puedes hacer mientras tanto?
-- Mantén tu correo actualizado para recibir notificaciones
-- Consulta el estado en cualquier momento citando tu número de caso: [Número]
-
-💡 ¿Necesitas ayuda adicional?
-Si tienes preguntas sobre el proceso o necesitas actualizar información relacionada con tu solicitud, contáctanos:
-[Información de contacto]
-
-📊 Tu opinión es importante:
-Una vez resolvamos tu solicitud, te invitaremos a completar una breve encuesta (2 minutos) para ayudarnos a mejorar nuestro servicio.
-
-Estamos comprometidos en brindarte la mejor experiencia posible.
+Una vez aprobado el workflow:
+✓ El perfil será completamente visible en EC-SF
+✓ El 4-2-2 estará disponible en el perfil del trabajador
 
 Saludos cordiales,
 
-[Nombre del Especialista]
+[Specialist's Name]
 People Services
 
 ---
-📌 Número de caso: [Número de Ticket] - Guarda este número para futuras referencias`,
+📌 Caso: [Número de Ticket] | Contingent Worker: [Nombre] | Pendiente: Aprobación workflow`,
+      long: `Buenos días/Buenas tardes [Nombre del Manager/HRBP],
+
+Gracias por contactarte con People Services.
+
+✅ Contingent Worker Creado Exitosamente:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Confirmamos que el perfil del contingent worker ha sido creado 
+satisfactoriamente en EC-SF:
+
+📋 Información del Contingent Worker:
+- Información general: [Nombre completo del trabajador, posición, manager]
+- Estado: ✅ Creado - Pendiente aprobación de workflow
+
+🔄 Próximo paso importante:
+
+El manager [Nombre del manager] recibirá un workflow de aprobación
+en EC-SF en las próximas 2-4 horas.
+
+Una vez aprobado el workflow:
+✓ El perfil será completamente visible en EC-SF
+✓ El 4-2-2 estará disponible en el perfil del trabajador
+✓ El correo corporativo será: [nombre.apellido]@bbraun.com (si aplica)
+✓ Los accesos estarán activos para la fecha de inicio
+
+⏰ **Timeline:**
+- Workflow enviado: Próximas 2-4 horas
+- Aprobación requerida: Antes de [fecha]
+- Perfil visible: Inmediatamente después de aprobación
+- Accesos activos: [Fecha de inicio]
+
+Saludos cordiales,
+
+[Specialist's Name]
+People Services
+
+---
+📌 Caso: [Número de Ticket] | Contingent Worker: [Nombre] | Pendiente: Aprobación workflow`,
     },
     en: {
-      short: `Good morning/Good afternoon [Employee Name],
+      short: `Good morning/Good afternoon [Manager’s/HRBP’s Name],
 
-Thank you for contacting People Services. We have received your request and are processing it.
+Thank you for contacting People Services.
 
-📋 Information:
-- Type: [Request Description]
-- Case number: [Ticket Number]
-- Estimated time: [X] business days
+✅ Contingent Worker Successfully Created:  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-We will notify you when we complete the process.
+We confirm that the contingent worker’s profile has been successfully created in EC-SF:
 
-Best regards,
-[Specialist Name]
-People Services`,
-      long: `Good morning/Good afternoon [Employee Name],
+📋 Contingent Worker Information:
 
-Thank you for contacting People Services. We have received your request and understand the importance of resolving this for you in a timely manner.
+General information: [Full name of worker, position, manager]
 
-📋 Important Information:
-- Type: [Request Description] in EC-SF
-- Case number: [Ticket Number]
-- Assigned to: [Specialist Name]
-- Current status: In progress
-- Estimated time: [X] business days (until [estimated date])
+Status: ✅ Created – Pending workflow approval
 
-📌 Next steps:
-1. We will validate the information in our systems (1-2 business days)
-2. If we need additional information, we will contact you via [email/phone]
-3. We will notify you as soon as we complete the process
+🔄 Next important step:
 
-⏰ What can you do in the meantime?
-- Keep your email updated to receive notifications
-- Check the status at any time by citing your case number: [Number]
+The manager [Manager’s Name] will receive a workflow approval request in EC-SF within the next 2–4 hours.
 
-💡 Need additional help?
-If you have questions about the process or need to update information related to your request, contact us:
-[Contact information]
-
-📊 Your opinion matters:
-Once we resolve your request, we will invite you to complete a brief survey (2 minutes) to help us improve our service.
-
-We are committed to providing you with the best possible experience.
+Once the workflow is approved:
+✓ The profile will be fully visible in EC-SF
+✓ The 4-2-2 will be available in the worker’s profile
 
 Best regards,
-
-[Specialist Name]
+[Specialist’s Name]
 People Services
 
----
-📌 Case number: [Ticket Number] - Save this number for future reference`,
+📌 Case: [Ticket Number] | Contingent Worker: [Name] | Pending: Workflow approval
+`,
+      long: `Good morning/Good afternoon [Manager’s/HRBP’s Name],
+
+Thank you for contacting People Services.
+
+✅ Contingent Worker Successfully Created:  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+We confirm that the contingent worker’s profile has been successfully created in EC-SF:
+
+📋 Contingent Worker Information:
+
+-General information: [Full name of worker, position, manager]
+-Status: ✅ Created – Pending workflow approval
+
+🔄 Next important step:
+
+The manager [Manager’s Name] will receive a workflow approval request in EC-SF within the next 2–4 hours.
+
+Once the workflow is approved:
+✓ The profile will be fully visible in EC-SF
+✓ The 4-2-2 will be available in the worker’s profile
+✓ The corporate email will be: [firstname.lastname]@bbraun.com (if applicable)
+✓ Access will be active as of the start date
+
+⏰ Timeline:
+
+-Workflow sent: Within the next 2–4 hours
+-Approval required: Before [date]
+-Profile visible: Immediately after approval
+-Access active: [Start date]
+
+Best regards,
+[Specialist’s Name]
+People Services
+
+------------------------
+📌 Case: [Ticket Number] | Contingent Worker: [Name] | Pending: Workflow approval`,
     },
     pt: {
-      short: `Bom dia/Boa tarde [Nome do Colaborador],
+      short: `Bom dia/Boa tarde [Nome do Manager/HRBP],
 
-Obrigado por entrar em contato com People Services. Recebemos sua solicitação e estamos processando.
+Obrigado por entrar em contato com People Services.
 
-📋 Informações:
-- Tipo: [Descrição da solicitação]
-- Número do caso: [Número do Ticket]
-- Tempo estimado: [X] dias úteis
+✅ Contingent Worker Criado com Sucesso:  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Notificaremos você quando concluirmos o processo.
+Confirmamos que o perfil do contingent worker foi criado com sucesso no EC-SF:
 
-Atenciosamente,
-[Nome do Especialista]
-People Services`,
-      long: `Bom dia/Boa tarde [Nome do Colaborador],
+📋 Informações do Contingent Worker:
 
-Obrigado por entrar em contato com People Services. Recebemos sua solicitação e entendemos a importância de resolver isso para você de maneira oportuna.
+Informações gerais: [Nome completo do trabalhador, posição, manager]
 
-📋 Informações importantes:
-- Tipo: [Descrição da solicitação] em EC-SF
-- Número do caso: [Número do Ticket]
-- Atribuído a: [Nome do Especialista]
-- Status atual: Em andamento
-- Tempo estimado: [X] dias úteis (até [data estimada])
+Status: ✅ Criado – Pendente aprovação do workflow
 
-📌 Próximos passos:
-1. Validaremos as informações em nossos sistemas (1-2 dias úteis)
-2. Se precisarmos de informações adicionais, entraremos em contato via [e-mail/telefone]
-3. Notificaremos você assim que concluirmos o processo
+🔄 Próximo passo importante:
 
-⏰ O que você pode fazer enquanto isso?
-- Mantenha seu e-mail atualizado para receber notificações
-- Consulte o status a qualquer momento citando seu número de caso: [Número]
+O manager [Nome do manager] receberá uma solicitação de aprovação de workflow no EC-SF dentro das próximas 2–4 horas.
 
-💡 Precisa de ajuda adicional?
-Se você tiver dúvidas sobre o processo ou precisar atualizar informações relacionadas à sua solicitação, entre em contato:
-[Informações de contato]
-
-📊 Sua opinião é importante:
-Assim que resolvermos sua solicitação, convidaremos você a completar uma breve pesquisa (2 minutos) para nos ajudar a melhorar nosso serviço.
-
-Estamos comprometidos em fornecer a você a melhor experiência possível.
+Uma vez aprovado o workflow:
+✓ O perfil ficará totalmente visível no EC-SF
+✓ O 4-2-2 estará disponível no perfil do trabalhador
 
 Atenciosamente,
-
 [Nome do Especialista]
 People Services
 
----
-📌 Número do caso: [Número do Ticket] - Guarde este número para referência futura`,
+📌 Caso: [Número do Ticket] | Contingent Worker: [Nome] | Pendente: Aprovação de workflow`,
+      long: `Bom dia/Boa tarde [Nome do Manager/HRBP],
+
+Obrigado por entrar em contato com People Services.
+
+✅ Contingent Worker Criado com Sucesso:  
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Confirmamos que o perfil do contingent worker foi criado com sucesso no EC-SF:
+
+📋 Informações do Contingent Worker:
+
+-Informações gerais: [Nome completo do trabalhador, posição, manager]
+-Status: ✅ Criado – Pendente aprovação do workflow
+
+🔄 Próximo passo importante:
+
+O manager [Nome do manager] receberá uma solicitação de aprovação de workflow no EC-SF dentro das próximas 2–4 horas.
+
+Uma vez aprovado o workflow:
+✓ O perfil ficará totalmente visível no EC-SF
+✓ O 4-2-2 estará disponível no perfil do trabalhador
+✓ O e-mail corporativo será: [nome.sobrenome]@bbraun.com (se aplicável)
+✓ Os acessos estarão ativos a partir da data de início
+
+⏰ Cronograma:
+
+-Workflow enviado: Dentro das próximas 2–4 horas
+-Aprovação necessária: Antes de [data]
+-Perfil visível: Imediatamente após a aprovação
+-Acessos ativos: [Data de início]
+
+Atenciosamente,
+[Nome do Especialista]
+People Services
+
+📌 Caso: [Número do Ticket] | Contingent Worker: [Nome] | Pendente: Aprovação de workflow`,
     },
   },
   whenToUse: [
